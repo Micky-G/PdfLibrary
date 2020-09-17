@@ -11,12 +11,8 @@ using Microsoft.Extensions.Logging;
 using PDFLibrary.Api.Models;
 using PDFLibrary.Api.Services;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace PDFLibrary.Api.Controllers
 {
-
-
     [Route("api/[controller]")]
     [ApiController]
     public class PDFLibraryController : ControllerBase
@@ -31,6 +27,10 @@ namespace PDFLibrary.Api.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Get list of Pdf details
+        /// </summary>
+        /// <returns>List of Pdf details</returns>
         [HttpGet]
         public async Task<List<PdfFileListItem>> Get()
         {
@@ -45,6 +45,11 @@ namespace PDFLibrary.Api.Controllers
             }     
         }
 
+        /// <summary>
+        /// Get (download) single Pdf
+        /// </summary>
+        /// <param name="fileName">Name of Pdf file</param>
+        /// <returns>Pdf file</returns>
         [HttpGet("{fileName}")]
         public async Task<ActionResult> Get(string fileName)
         {
@@ -68,6 +73,11 @@ namespace PDFLibrary.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Upload a Pdf
+        /// </summary>
+        /// <param name="file">Pdf file for storing</param>
+        /// <returns>ActionResult (success/fail)</returns>
         [HttpPost]
         public async Task<ActionResult> Post([FromForm] IFormFile file)
         {
@@ -107,6 +117,11 @@ namespace PDFLibrary.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Allows re-ordering of Pdf list
+        /// </summary>
+        /// <param name="newOrder">List of filenames representing new order</param>
+        /// <returns>Success/fail</returns>
         [HttpPut]
         public async Task<ActionResult> Put([FromForm] List<string> newOrder)
         {
@@ -128,6 +143,11 @@ namespace PDFLibrary.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Deletes a Pdf from store
+        /// </summary>
+        /// <param name="fileName">File name of Pdf to delete</param>
+        /// <returns>Success/fail</returns>
         [HttpDelete("{fileName}")]
         public async Task<ActionResult> Delete(string fileName)
         {
