@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFLibrary.Api", "PDFLibrary.Api\PDFLibrary.Api.csproj", "{6E66FAC3-B27F-452D-A7E5-5CA81FB2745C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFLibrary.Api.Tests", "PDFLibrary.Api.Tests\PDFLibrary.Api.Tests.csproj", "{8ECEC9BB-DA6A-410F-8F3C-9A0FA661AE5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E66FAC3-B27F-452D-A7E5-5CA81FB2745C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E66FAC3-B27F-452D-A7E5-5CA81FB2745C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E66FAC3-B27F-452D-A7E5-5CA81FB2745C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E66FAC3-B27F-452D-A7E5-5CA81FB2745C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECEC9BB-DA6A-410F-8F3C-9A0FA661AE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECEC9BB-DA6A-410F-8F3C-9A0FA661AE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECEC9BB-DA6A-410F-8F3C-9A0FA661AE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECEC9BB-DA6A-410F-8F3C-9A0FA661AE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FD3DF82-E0E4-4E38-8568-E47CB9D0BE81}
+	EndGlobalSection
+EndGlobal
